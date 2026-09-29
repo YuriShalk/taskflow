@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TaskFlow - Gerenciador de Tarefas</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@twemoji/api@17.0.3/dist/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <a href="/" class="logo" data-route> TaskFlow </a>
+        <img src="../imagens/logo.webp" alt="Logo do TaskFlow">
+
+        <nav class="navigation" aria-label="Navegação principal">
+          <a href="/" data-route>Início</a>
+          <a href="/tarefas" data-route>Tarefas</a>
+          <a href="/nova-tarefa" data-route>Nova tarefa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="app" class="container">
+      <section class="hero">
+        <span class="hero-label">GERENCIADOR DE TAREFAS</span>
+
+        <h1>Organize suas tarefas de forma simples.</h1>
+        <img src="../imagens/check.webp" alt="Ícone de checagem">
+
+        <p>Crie, acompanhe e conclua suas tarefas em um único lugar.</p>
+
+        <a href="/nova-tarefa" class="button" data-route> Criar nova tarefa </a>
+      </section>
+
+      <section class="summary">
+        <article class="summary-card">
+          <span class="summary-number">0</span>
+          <span class="summary-label">Tarefas</span>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-number">0</span>
+          <span class="summary-label">Pendentes</span>
+        </article>
+
+        <article class="summary-card">
+          <span class="summary-number">0</span>
+          <span class="summary-label">Concluídas</span>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 TaskFlow. Projeto acadêmico.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
