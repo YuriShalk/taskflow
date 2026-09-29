@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   root: 'html',
-  base: command === 'build'
-    ? '/TaskFlow/'
-    : '/',
+
+  base: '/taskflow/',
+
   build: {
     outDir: '../dist',
     emptyOutDir: true
   }
-}));
+});
